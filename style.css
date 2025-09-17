@@ -1,0 +1,154 @@
+* {
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 99.2vw;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(97, 106, 160);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 30vh;
+    width: 10%;
+    background-color: rgb(97, 106, 160);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li {
+    font-size: 24px;
+    padding: 5px;
+    margin: 5px;
+    outline: 1px black solid;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 7%;
+    background-color: rgb(157, 160, 199);
+}
+
+.SmallChart {
+    width: 25%;
+    height: 15%;
+    padding: 0;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: #688a97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chart {
+    width: 40%;
+    height: 25%;
+    padding: 0;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: rgb(104, 138, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BigChart {
+    width: 50%;
+    height: 30%;
+    padding: 0;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #688a97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PieChart {
+  width: 400px;
+  height: 400px;
+  background-image: conic-gradient(rgba(76, 0, 255, 0.2) 32% , rgba(1, 1, 1, 1) 32%, rgba(1, 1, 1, 1) 32.3%, rgba(255, 0, 0, 0.2) 32%, rgba(255, 0, 0, 0.2) 64%, rgba(1, 1, 1, 1) 64%, rgba(1, 1, 1, 1) 64.3%, rgba(0, 255, 21, 0.2) 64.3%, rgba(0, 255, 21, 0.2) 81%, rgba(1, 1, 1, 1) 81%, rgba(1, 1, 1, 1) 81.2%, rgba(255, 255, 0, 0.2) 81.2%, rgba(255, 255, 0, 0.2) 99.7%, rgba(1, 1, 1, 1) 99.7%, rgba(1, 1, 1, 1) 100%), url("pizza.png");
+  border-radius: 50%
+}
+
+.liczby {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.liczby h4 {
+    position: absolute;
+}
+
+
+.BigChart .Legend ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.M1 {
+    margin-top: -220px;
+}
+
+.M2 {
+    margin-top: -140px;
+}
+
+.BigChart .Legend ul h4 {
+    margin: 15px;
+}
+
+#p1 {top:51%; left: 17%;} #p2 {top:47%; left: 20.2%;}
+#p3 {top:54%; left: 23.8%;}
+#p4 {top:53%; left: 26.8%;}
+#p5 {top:57%; left: 30%;}
+#p6 {top:43%; left: 33.5%;}
+#p7 {top:50%; left: 36.8%;}
+#p8 {top:39%; left: 40.1%;}
+#p9 {top:45%; left: 44%;}
+#p10 {top:52%; left: 46.5%;}
+#p11 {top:45%; left: 49.3%;}
+#p12 {top:33%; left: 53.3%;}
+
+#LineGraph {
+    position: absolute;
+    width: 700px;
+    height: 350px;
+    background: #2A7B9B;
+    clip-path: polygon(0% 100%, 0% 69%, 9% 55%, 18% 77%, 27% 72%,36% 85%, 45% 45%, 54% 65%, 63% 34%, 72% 49%, 81% 70%, 90% 51%, 100% 18%, 100% 100%);
+}
