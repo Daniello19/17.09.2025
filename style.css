@@ -9,7 +9,80 @@ body {
     height: 200vh;
     margin: 0;
     padding: 0;
-    background-color: rgb(97, 106, 160);
+    background-color: rgb(51, 51, 51);
+}
+
+nav * {
+    color: rgb(222, 222, 222);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    width: 10%;
+    height: 40vh;
+}
+
+nav ul li {
+    list-style-type: none;
+    height: 5%;
+}
+
+nav ul li button {
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li button img {
+    width: 6%;
+}
+
+nav ul li img {
+    width: 70%;
+}
+
+nav ul li button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(70, 70, 70);
+    transition: 0.6s;
+}
+
+nav ul li button:hover * {
+    color: rgb(70, 70, 70);
+    transition: 0.6s;
+}
+
+nav ul li button:hover {
+    cursor: pointer;
+}
+
+.circlechart ul li {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circlechart ul {
+    width: 90%;
+}
+
+.circlechart ul li h2 {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -17,32 +90,12 @@ nav ul {
     padding: 0;
 }
 
-nav {
-    height: 30vh;
-    width: 10%;
-    background-color: rgb(97, 106, 160);
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-nav ul li {
-    font-size: 24px;
-    padding: 5px;
-    margin: 5px;
-    outline: 1px black solid;
-    border-radius: 10px;
-    list-style-type: none;
-}
 
 main {
     width: 100%;
@@ -57,6 +110,8 @@ main {
 header {
     width: 100%;
     height: 7%;
+    display: flex;
+    justify-content: center;
     background-color: rgb(157, 160, 199);
 }
 
@@ -96,11 +151,36 @@ header {
     align-items: center;
 }
 
-.PieChart {
-  width: 400px;
-  height: 400px;
-  background-image: conic-gradient(rgba(76, 0, 255, 0.2) 32% , rgba(1, 1, 1, 1) 32%, rgba(1, 1, 1, 1) 32.3%, rgba(255, 0, 0, 0.2) 32%, rgba(255, 0, 0, 0.2) 64%, rgba(1, 1, 1, 1) 64%, rgba(1, 1, 1, 1) 64.3%, rgba(0, 255, 21, 0.2) 64.3%, rgba(0, 255, 21, 0.2) 81%, rgba(1, 1, 1, 1) 81%, rgba(1, 1, 1, 1) 81.2%, rgba(255, 255, 0, 0.2) 81.2%, rgba(255, 255, 0, 0.2) 99.7%, rgba(1, 1, 1, 1) 99.7%, rgba(1, 1, 1, 1) 100%), url("pizza.png");
-  border-radius: 50%
+#PizzaChart {
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(rgba(76, 0, 255, 0.2) 32% , rgba(1, 1, 1, 1) 32%, rgba(1, 1, 1, 1) 32.3%, rgba(255, 0, 0, 0.2) 32%, rgba(255, 0, 0, 0.2) 64%, rgba(1, 1, 1, 1) 64%, rgba(1, 1, 1, 1) 64.3%, rgba(0, 255, 21, 0.2) 64.3%, rgba(0, 255, 21, 0.2) 81%, rgba(1, 1, 1, 1) 81%, rgba(1, 1, 1, 1) 81.2%, rgba(255, 255, 0, 0.2) 81.2%, rgba(255, 255, 0, 0.2) 99.7%, rgba(1, 1, 1, 1) 99.7%, rgba(1, 1, 1, 1) 100%), url("pizza.png");
+    border-radius: 50%;
+    background-color: rgba(236, 236, 236, 0.5);
+    box-shadow: 1px 1px 8px 1px rgb(185, 185, 185);
+    border-radius: 30px;
+}
+
+#CircleColor1 {
+    background-color: rgb(76, 0, 255);
+}
+
+#CircleColor2 {
+    background-color: rgb(255, 0, 0);
+}
+
+#CircleColor3 {
+    background-color: rgb(0, 255, 21);
+}
+
+#CircleColor4 {
+    background-color: rgb(255, 255, 0);
+}
+
+.CircleColor {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
 }
 
 .liczby {
@@ -112,6 +192,12 @@ header {
 
 .liczby h4 {
     position: absolute;
+}
+
+.liczby h3 {
+    position: absolute;
+    top: 35%;
+    left: 24%;
 }
 
 
@@ -151,4 +237,87 @@ header {
     height: 350px;
     background: #2A7B9B;
     clip-path: polygon(0% 100%, 0% 69%, 9% 55%, 18% 77%, 27% 72%,36% 85%, 45% 45%, 54% 65%, 63% 34%, 72% 49%, 81% 70%, 90% 51%, 100% 18%, 100% 100%);
+}
+
+.columnChart1 {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 90%;
+    margin: 10px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 1px 1px 8px 1px rgb(185, 185, 185);
+    border-radius: 30px;
+}
+
+.chart {
+    display: flex;
+    align-items: end;
+    height: 60%;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.columnChart1 .divider {
+    height: 100%;
+    width: 2%;
+    background-color: rgb(236, 236, 236);
+    clear: both;
+}
+
+.columnChart1 .chart .columnLimiter {
+    width: 9.4%;
+    background-color: rgb(236, 236, 236);
+}
+
+.columnChart1 #col1 {
+    width: 20%;
+    height: 80%;
+    background-color: rgb(223, 16, 137);
+}
+
+.columnChart1 #col2 {
+    width: 20%;
+    height: 50%;
+    background-color: rgb(248, 3, 126);
+}
+
+.columnChart1 #col3 {
+    width: 20%;
+    height: 67%;
+    background-color: rgb(213, 45, 128);
+}
+
+.columnChart1 #col4 {
+    width: 20%;
+    height: 34%;
+    background-color: rgb(231, 4, 99);
+}
+
+.columnChart1 #col5 {
+    width: 20%;
+    height: 60%;
+    background-color: rgb(215, 120, 245);
+}
+
+.dane {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    height: 24%;
+    margin: auto;
+    margin-left: -10px;
+}
+
+.dane ul {
+    display: flex;
+    align-items: start;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.dane ul li {
+    transform: rotate(90deg);
 }

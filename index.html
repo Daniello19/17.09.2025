@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav class="navigation">
         <ul>
-            <li><img src="" alt="Placeholder"></li>
-            <li><a href="index.html">Dashboard</a></li>
-            <li><a href="Main.html">Email</a></li>
-            <li><a href="Charts.html">Charts</a></li>
-            <li><a href="Settings.html">Settings</a></li>
+            <li><img src="pizza.png" alt="Placeholder"></li>
+            <li><button><a href="index.html">Dashboard</a></button></li>
+            <li><button><a href="regulamin.html">Regulamin</a></button></li>
+            <li><button><a href="settings.html">Ustawienia</a></button></li>
         </ul>
     </nav>
     <main>
         <header>
-            <h1>THA PROFFESIONAL DASHBOARD</h1>
+            <h1>Dashboard</h1>
         </header>
         <div class="BigChart">
             <div class="liczby">
+                <h3>Ilość zamówionych pizz w danym miesiącu</h3>
                 <h4 id="p1">1</h4>
                 <h4 id="p2">2</h4>
                 <h4 id="p3">3</h4>
@@ -37,6 +37,7 @@
             </div>
             <div id="LineGraph">
             </div>
+            
             <div class="Legend">
                 <ul class="M1">
                     <h4>7 - Lipiec;</h4>
@@ -55,12 +56,59 @@
                     <h4>6 - Czerwiec;</h4>
                 </ul>
             </div>
+            
         </div>
         <div class="Chart">
-            <div class="PieChart"></div>
+            <div id="PizzaChart"></div>
+            <div class="circlechart">
+                <ul>
+                    <li>
+                        <h2>Dane:</h2>
+                    </li>
+                    <li>
+                        <div id="CircleColor1" class="CircleColor"></div>
+                        <h2>Margherita 32%</h2>
+                    </li>
+                    <li>
+                        <div id="CircleColor2" class="CircleColor"></div>
+                        <h2>Capricciosa 32%</h2>
+                    </li>
+                    <li>
+                        <div id="CircleColor3" class="CircleColor"></div>
+                        <h2>Cztery sery 17%</h2>
+                    </li>
+                    <li>
+                        <div id="CircleColor4" class="CircleColor"></div>
+                        <h2>Neapolitańska 19%</h2>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="Chart">
-            <div></div>
+            <h2>Ile pizz w menu ma ten skladnik?</h2>
+                <div class="columnChart1">
+                    <div class="chart">
+                        <div class="" id="col1"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col2"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col3"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col4"></div>
+                        <div class="divider"></div>
+                        <div class="" id="col5"></div>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="dane">
+                        <ul>
+                            <li>Ser 80%</li>
+                            <li>Pepperoni 50%</li>
+                            <li>Pomidor 67%</li>
+                            <li>Pieczarki 34%</li>
+                            <li>Kurczak 60%</li>
+                        </ul>
+                    </div>
+                </div>
         </div>
         <div class="SmallChart">
             <div></div>
