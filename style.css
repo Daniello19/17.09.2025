@@ -216,7 +216,7 @@ a {
 main {
     width: 100%;
     height: 100%;
-    background-color: rgb(200, 185, 206);
+    background-color: rgb(115, 108, 117);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -228,7 +228,7 @@ header {
     height: 7%;
     display: flex;
     justify-content: center;
-    background-color: rgb(168, 158, 179);
+    background-color: rgb(80, 76, 85);
 }
 
 .hh6 {
@@ -461,7 +461,7 @@ header {
     padding: 0;
     margin: 15px;
     border-radius: 15px;
-    background-color: #688a97;
+    background-color: #856896;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -473,7 +473,7 @@ header {
     padding: 0;
     margin: 15px;
     border-radius: 15px;
-    background-color: rgb(104, 138, 151);
+    background-color: #856896;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -485,7 +485,7 @@ header {
     padding: 0;
     margin: 5px;
     border-radius: 15px;
-    background-color: #688a97;
+    background-color: #856896;
     display: flex;
     justify-content: center;
     align-items: center;
