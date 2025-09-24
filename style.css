@@ -14,6 +14,118 @@ body {
 
 nav * {
     color: rgb(222, 222, 222);
+    margin-left: 5px;
+}
+
+
+.wrapper {
+  display: table;
+  margin: 0 auto;
+  background: rgba(21, 34, 46, 0.25);
+  padding: 35px 40px 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.32), 0 1px 9px -1px #15222e;
+  text-align: center;
+}
+
+.wrapper-header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.74);
+  margin: 30px 0 15px;
+  font-weight: normal;
+}
+
+.gauge {
+  background: #e7e7e7;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.09), 0 0 35px 5px rgba(255, 255, 255, 0.29);
+  width: 200px;
+  height: 100px;
+  border-radius: 100px 100px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.gauge-center {
+  content: '';
+  color: #fff;
+  width: 60%;
+  height: 60%;
+  background: #15222E;
+  border-radius: 100px 100px 0 0;
+  position: absolute;
+  box-shadow: 0 -13px 15px -10px rgba(0, 0, 0, 0.28);
+  right: 21%;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.CircleColor
+.gauge-center .label, .gauge-center .number {display:block; width: 100%; text-align: center; border:0!important;}
+.gauge-center .label {font-size:0.75em; opacity:0.6; margin:1.1em 0 0.3em 0;}
+.gauge-center .number {font-size:1.2em;}
+
+.SmallChart div {
+    text-align: center;
+}
+
+.needle {
+  width: 78px;
+  height: 7px;
+  background: #15222E;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 5px;
+  position: absolute;
+  bottom: 4px;
+  left: 20px;
+  transform-origin: 100% 4px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.38);
+  transform: rotate(90deg);
+}
+
+.slice-colors .st {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 0;
+  border-bottom: 80px solid #000;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+.slice-colors .st.slice-item:nth-child(1) {
+  border-bottom-color: #EB8916;
+  left: -5px;
+}
+.slice-colors .st.slice-item:nth-child(2) {
+  border-bottom-color: #15C63C;
+  transform: rotate(145deg);
+  transform-origin: right;
+  top: 12px;
+  left: -30px;
+}
+.slice-colors .st.slice-item:nth-child(3) {
+  border-bottom-color: #15C63C;
+  transform: rotate(225deg);
+  transform-origin: right;
+  top: -50px;
+  left: 25px;
+}
+.slice-colors .st.slice-item:nth-child(4) {
+  border-bottom-color: #D74141;
+  transform: rotate(35deg);
+  transform-origin: right;
+  right: -10px;
+  bottom: -28px;
+}
+.slice-colors .st.slice-item:nth-child(5) {
+  border-bottom-color: #D74141;
+  transform: rotate(28deg);
+  transform-origin: right;
+  right: -10px;
+  bottom: -50px;
 }
 
 nav {
@@ -28,6 +140,7 @@ nav {
 nav ul li {
     list-style-type: none;
     height: 5%;
+    
 }
 
 nav ul li button {
@@ -96,11 +209,14 @@ a {
     color: rgb(255, 255, 255);
 }
 
+.SmallChart div img {
+    width: 40%;
+}
 
 main {
     width: 100%;
     height: 100%;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(200, 185, 206);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -112,12 +228,236 @@ header {
     height: 7%;
     display: flex;
     justify-content: center;
-    background-color: rgb(157, 160, 199);
+    background-color: rgb(168, 158, 179);
 }
+
+.hh6 {
+    position: absolute;
+    bottom: 5px;
+}
+
+.usa {
+    position: absolute;
+}
+
+#par {
+    margin-top: -300px;
+}
+
+.chart h6 {
+    position: absolute;
+}
+
+#a1 {
+    bottom: -570px;
+    left: 830px;
+}
+
+#a12 {
+    bottom: -610px;
+    left: 830px;
+}
+
+#a13 {
+    bottom: -650px;
+    left: 810px;
+}
+
+#a14 {
+    bottom: -655px;
+    left: 850px;
+}
+
+#a2 {
+    bottom: -600px;
+    left: 870px;
+}
+
+#a15 {
+    bottom: -660px;
+    left: 895px;
+}
+
+#a27 {
+    bottom: -715px;
+    left: 895px;
+}
+
+#a3 {
+    bottom: -570px;
+    left: 900px;
+}
+
+#a16 {
+    bottom: -615px;
+    left: 930px;
+}
+
+#a20 {
+    bottom: -660px;
+    left: 945px;
+}
+
+#a28 {
+    bottom: -712px;
+    left: 945px;
+}
+
+
+#a4 {
+    bottom: -570px;
+    left: 1000px;
+}
+
+#a17 {
+    bottom: -601px;
+    left: 1000px;
+}
+
+#a18 {
+    bottom: -636px;
+    left: 1000px;
+}
+
+#a19 {
+    bottom: -666px;
+    left: 1013px;
+}
+
+#a29 {
+    bottom: -700px;
+    left: 1013px;
+}
+
+#a30 {
+    bottom: -750px;
+    left: 1007px;
+}
+
+#a5 {
+    bottom: -570px;
+    left: 1050px;
+}
+
+#a21 {
+    bottom: -630px;
+    left: 1050px;
+}
+
+#a22 {
+    bottom: -664px;
+    left: 1060px;
+}
+
+#a31 {
+    bottom: -710px;
+    left: 1060px;
+}
+
+#a32 {
+    bottom: -740px;
+    left: 1060px;
+}
+
+#a6 {
+    bottom: -600px;
+    left: 1090px;
+}
+
+#a23 {
+    bottom: -650px;
+    left: 1090px;
+}
+
+#a33 {
+    bottom: -735px;
+    left: 1086px;
+}
+
+#a7 {
+    bottom: -565px;
+    left: 1115px;
+}
+
+#a24 {
+    bottom: -650px;
+    left: 1115px;
+}
+
+#a36 {
+    bottom: -700px;
+    left: 1115px;
+}
+
+#a37 {
+    bottom: -680px;
+    left: 1125px;
+}
+
+#a34 {
+    bottom: -735px;
+    left: 1110px;
+}
+
+#a8 {
+    bottom: -615px;
+    left: 1130px;
+}
+
+#a25 {
+    bottom: -650px;
+    left: 1145px;
+}
+
+#a35 {
+    bottom: -735px;
+    left: 1140px;
+}
+
+#a37 {
+    bottom: -770px;
+    left: 1152px;
+}
+
+#a9 {
+    bottom: -615px;
+    left: 1210px;
+}
+
+#a26 {
+    bottom: -640px;
+    left: 1190px;
+}
+
+#a38 {
+    bottom: -680px;
+    left: 1190px;
+}
+
+#a39 {
+    bottom: -700px;
+    left: 1190px;
+}
+
+#a40 {
+    bottom: -720px;
+    left: 1170px;
+}
+
+#a10 {
+    bottom: -580px;
+    left: 1230px;
+}
+
+#a11 {
+    bottom: -580px;
+    left: 1265px;
+}
+
 
 .SmallChart {
     width: 25%;
-    height: 15%;
+    height: 18%;
     padding: 0;
     margin: 15px;
     border-radius: 15px;
@@ -154,7 +494,7 @@ header {
 #PizzaChart {
     width: 400px;
     height: 400px;
-    background-image: conic-gradient(rgba(76, 0, 255, 0.2) 32% , rgba(1, 1, 1, 1) 32%, rgba(1, 1, 1, 1) 32.3%, rgba(255, 0, 0, 0.2) 32%, rgba(255, 0, 0, 0.2) 64%, rgba(1, 1, 1, 1) 64%, rgba(1, 1, 1, 1) 64.3%, rgba(0, 255, 21, 0.2) 64.3%, rgba(0, 255, 21, 0.2) 81%, rgba(1, 1, 1, 1) 81%, rgba(1, 1, 1, 1) 81.2%, rgba(255, 255, 0, 0.2) 81.2%, rgba(255, 255, 0, 0.2) 99.7%, rgba(1, 1, 1, 1) 99.7%, rgba(1, 1, 1, 1) 100%), url("pizza.png");
+    background-image: conic-gradient(rgba(255, 0, 0, 0.2) 32% , rgba(1, 1, 1, 1) 32%, rgba(1, 1, 1, 1) 32.3%, rgba(0, 0, 0, 0.2) 32%, rgba(0, 0, 0, 0.2) 81%, rgba(1, 1, 1, 1) 81%, rgba(1, 1, 1, 1) 81.2%, rgba(0, 255, 0, 0.2) 81.2%, rgba(0, 255, 0, 0.2) 99.7%, rgba(1, 1, 1, 1) 99.7%, rgba(1, 1, 1, 1) 100%), url("pizza.png");
     border-radius: 50%;
     background-color: rgba(236, 236, 236, 0.5);
     box-shadow: 1px 1px 8px 1px rgb(185, 185, 185);
@@ -162,19 +502,15 @@ header {
 }
 
 #CircleColor1 {
-    background-color: rgb(76, 0, 255);
-}
-
-#CircleColor2 {
     background-color: rgb(255, 0, 0);
 }
 
-#CircleColor3 {
-    background-color: rgb(0, 255, 21);
+#CircleColor2 {
+    background-color: rgb(0, 0, 0);
 }
 
-#CircleColor4 {
-    background-color: rgb(255, 255, 0);
+#CircleColor3 {
+    background-color: rgb(0, 255, 0);
 }
 
 .CircleColor {
@@ -256,7 +592,6 @@ header {
     height: 60%;
     width: 90%;
     margin: auto;
-    margin-top: 10px;
 }
 
 .columnChart1 .divider {
@@ -273,31 +608,31 @@ header {
 
 .columnChart1 #col1 {
     width: 20%;
-    height: 80%;
+    height: 28%;
     background-color: rgb(223, 16, 137);
 }
 
 .columnChart1 #col2 {
     width: 20%;
-    height: 50%;
+    height: 30%;
     background-color: rgb(248, 3, 126);
 }
 
 .columnChart1 #col3 {
     width: 20%;
-    height: 67%;
+    height: 18%;
     background-color: rgb(213, 45, 128);
 }
 
 .columnChart1 #col4 {
     width: 20%;
-    height: 34%;
+    height: 14%;
     background-color: rgb(231, 4, 99);
 }
 
 .columnChart1 #col5 {
     width: 20%;
-    height: 60%;
+    height: 10%;
     background-color: rgb(215, 120, 245);
 }
 
